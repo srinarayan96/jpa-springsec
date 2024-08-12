@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mysql://127.0.0.1:3306/user-details
+    password: ParkView0502
+  application:
+    name: jpa-test
+  jpa:
+    properties:
+      hibernate:
+        format_sql: 'true'
+    show-sql: 'true'
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
