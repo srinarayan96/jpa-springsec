@@ -26,6 +26,10 @@ public class LoginController {
     public String showAccessDeniedPage(){
         return "access-denied";
     }
+    @PostMapping("/access-denied")
+    public String showAccessDeniedPagePost(){
+        return "access-denied";
+    }
     @GetMapping("/register")
     public String registerPage(Model model){
         model.addAttribute("webUser", new WebUser());

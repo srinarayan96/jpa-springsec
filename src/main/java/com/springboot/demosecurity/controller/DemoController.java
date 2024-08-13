@@ -31,6 +31,10 @@ public class DemoController {
     public String showSystems(){
         return "systems";
     }
+    @GetMapping("/role-manage")
+    public String manageRole(){
+        return "role-manager";
+    }
 }
 
 

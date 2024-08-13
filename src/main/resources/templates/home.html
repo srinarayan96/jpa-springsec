@@ -27,7 +27,9 @@ Welcome to my company homepage
         <a th:href="@{/systems}">IT Systems Meeting</a>
         (Only for admins)
     </p>
-
+    <p>
+        <a th:href="@{/role-manage}">Role Management Portal</a>
+    </p>
 </div>
 <div sec:authorize="hasAnyRole('ADMIN', 'MANAGER')">
     <hr>
